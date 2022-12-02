@@ -1,0 +1,16 @@
+import numpy as np
+
+a = np.matrix('1 -4  0; 2 -3 1; 1 4 2')
+b = np.matrix('-5; -7; -1')
+
+print('A=',"\n", a)
+
+print('B=',"\n", b)
+
+a_inv = np.linalg.inv(a)
+
+print("\n", a_inv)
+
+x = a_inv.dot(b)
+
+print('X=',"\n",x)
