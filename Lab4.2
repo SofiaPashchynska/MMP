@@ -1,0 +1,20 @@
+import numpy as np
+
+a = np.array([[2, -4, 0, 2],[-3, 1, 1, 4],[2,7,9,1]])
+с=[]
+print('A=',"\n", a)
+
+b = np.sum(a);
+print("Сума всіх елементів матриці:",b)
+
+for i in range (len(a[0])):
+    stowbtsy=0
+    for j in range (len(a)):
+        stowbtsy+=a[j][i]
+    с.append(stowbtsy)
+print("Сума елементів кожного стовпця:",с)
+
+k = b/с
+
+print("Доля суми кожного стовпця в загальну суму:")
+print(k)
