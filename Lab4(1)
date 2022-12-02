@@ -1,0 +1,19 @@
+import numpy as np
+
+a = np.array([[1, 2], [4, -1]]) #Задаємо матриці
+b = np.array([[2, -3], [-4, 1]])
+print("Матриця А:")
+print(a)
+print("Матриця В:")
+print(b)
+
+c = a.dot(b)
+d = b.dot(a)
+print("Матриця АВ:")
+print(c)
+print("Матриця ВА:")
+print(d)
+
+k = c - d
+print("АВ-ВА:")
+print(k)
