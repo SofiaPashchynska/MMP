@@ -1,0 +1,11 @@
+import numpy as np
+
+a = np.array([[0, 2, 0], [3, 4, 5], [6, 7, 8]])
+
+print("Матриця А:")
+print(a)
+
+print("Визначник:")
+a_det = np.linalg.det(a) 
+
+print(format(a_det, '.9g'))
